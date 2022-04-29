@@ -119,7 +119,7 @@ body {
   display: grid;
   grid-template-areas: "vide texte texte vide";
   grid-template-columns: 1fr 2fr 2fr 1fr;
-  column-gap: 5px;
+  column-gap: 2em;
   text-align: justify;
 }
 
@@ -180,6 +180,7 @@ footer {
   text-decoration: none;
   justify-content: space-evenly;
   padding-right: 1em;
+  font-size: large;
 }
 
 .footer-contacter-text {
@@ -215,5 +216,4 @@ footer {
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
-  border: 2.8px solid var(--white);
 }
