@@ -4,72 +4,92 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" type="image/x-icon" href="img/logo.PNG"/>
     <!-- <script src  > </script> -->
-    <title>Portfolio-Web</title>
+    <title>Justin Beaulieu</title>
   </head>
   <body>
     <header>
-      <nav >
-        <div class="logo">
-        <a class="Accueil" href="index.html">
-          <img src="img/logo.PNG" style="width:100px;height:100px" />
-          <div class="nav-bar">
+      <nav class="nav-bar">
+            <div class="logo">
+        <a class="Accueil" href="index.html"><img src="img/logo.PNG" style="width:100px;height:100px" /> </a>
           <ul>
-          <li>   <a class="Projet" href="pages/projet.html">Projets</a>  </li>
-          <li><div class="boutonDiv"><a class="bouton" href="pages/contacte.html">Me contacter</a></li></div> 
+          <li>   <a class="Projet" href="#section-presentation">Projets</a>  </li>
+          <li>
+            <div class="bouton-contact"><a class="bouton" href="pages/contacte.html">Me contacter</a></li>
+            </div> 
           </ul>
         </div>
       </nav>
     </header>
     <br>
-    <div class="Bienvenue">
-  <div class="TextePhoto"> 
-<div class="Bienvenueh1"><h1> Programmation et création de site web </h1></div> 
+    <section class="section-titre"> 
+  <div class="texte-photo"> 
+<div class="bienvenue-titre"> <h1> Bienvenue sur mon portfolio-web </h1> </div> 
 <br>
-<div class="Bienvenueh2"> <h2 > Bienvenue chez moi, faite comme chez vous.</h2> </div>
+<div class="bienvenue-sous-titre"> <h2> Programmation logiciel et web, design</h2> </div>
 <br>
-<div class="BienvenuePhoto"><img src="img/marsu.jpg" style="width:350px;height:350px" /></div>
-</div>
+<div class="bienvenue-photo"><img class="photo" src="img/moi2.png" style="width:350px;height:350px" /></div>
+  </div>
+</section>
 <br>
 <br>
-<section class="SectionPresentation">
+<section id="section-presentation">
   <br>
   <div class="vide"></div>
-<div class="Presentation"> <h1 class="Presentation-part1"> Salut ! Moi c'est Justin, ravi de vous rencontrez.</h1>
-  <h3 class="Presentation-part2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil autem quisquam nesciunt sit delectus sint, commodi expedita dolorum, dicta quia mollitia aliquam ipsa molestiae magnam architecto minus deserunt assumenda.</h3> </div>
+<div class="presentation"> <h1 class="presentation-titre"> Salut ! Moi c'est Justin, ravi de vous rencontrez.</h1>
+  <h3 class="presentation-sous-titre"> Depuis tout petit, j'ai toujours jouer à des jeux-vidéos. Suite à mon secondaire, je me suis dit, «je vais aller en informatique au Cégep» . Du coup j'en suis la en 2022, j'adore le domaine et je vais terminer ma première année du DEC en informatique au Cégep de Rimouski.   </h3> </div>
 <div class="vide"> </div>
 </section>
 <br>
-  <section class="section-is-infos">
+  <section class="section-infos">
     <br>
     <div class="vide"></div>
-    <div class="infos-gauche">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro temporibus repellat vitae hic, dolorem rerum ab repudiandae consequuntur inventore perferendis quaerat suscipit non omnis enim expedita eos ipsam quasi corporis!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consectetur, ab, eius fugit reprehenderit illum, ipsam fuga ex eos aut natus voluptatem sint. Laboriosam quae, ipsum aliquam quaerat libero totam?</div>
-    <div class="infos-droite"> Lorem, ipsum doloxhcvvhvr sisndjsdt amet consectetur adipisicing elit. Ut molestiae velit eaque quisquam perferendis doloribus placeat maxime voluptates. Temporibus tempore unde voluptas quasi maiores omnis laudantium et beatae sequi in!
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta iure consectetur culpa unde fugiat enim labore sed ad non veritatis harum, debitis corporis minima, repudiandae, fugit impedit? Blanditiis, error magni!</div>
+    
+    <div class="infos-gauche">  <h3 class="titre-infos-gauche">Design et creation de site web</h3>J'ai toujours aimé les arts, donc le design me parle beaucoup. En fesant un site web, cela me permet d'utiliser ma créativité et j'adore cela. Le portfolio web ici présent est mon tout premier site web et j'en suis pas peu fier. J'ai adoré découvrir le HTML/CSS en créant ce site web. </div>
+    <div class="infos-droite">  <h3 class="titre-infos-droit">Programmation</h3>Pour ce qui est de la programmation, je code pour le moment en C++. Adorant les jeux-vidéos, j'ai hâte d'apprendre le orianté objet en C++. Je ne suis pas encore assez expérienté mais j'ai hâte de découvrir comment faire le design d'une application.</div>
     <div class="vide"></div>
     <br>
   </section>
-</div>
 <br>
-<script>
-
-
-</script>
-
-  </body>
-  <footer> <br>
-    
-    <div class="section is blue">
-     
-     <div class="footer-contacter"> 
-       <ul>
+<hr>
+<br>
+<section class="section-projet"> 
+<br>
+<div class="projet"><h1 class="projet-titre">Mes projets</h1> <br>
+  <h3 class="projet-sous-titre"> Voici mes projets les plus importants</h3> <br>
+<br>
+<main class="list-projet">
+  <br>
+  <div class="vide"></div> 
+  <div class="list-titre-projet">
+    <ul>
+  <li><h1>Guichet bancaire</h1>Travail pratique final de 2eme session</li>
+  <li><h1>Mon portfolio-web </h1>Je crois que vous êtes dessus!</li>
+ </ul>
+  </div>
+<div class="list-photo-projet">
+<ul>
+  <li class="button-tp"><a href="pages/projet-tp-final.html"><img src="img/tp.PNG" height="250px" width="500px" ></a></li>
+  <li class="button-portfolio-web"><a href="../index.html"><img src="img/logo.PNG" height="150px" width="150px"></a></li>
+</ul>
+</div>
+<div class="vide"></div> 
+<br>
+</main>
+</div>
+</section>
+<footer> <br>
+    <div class="section-footer">
+     <div class="footer-contacter"> <br>
+       <ul> 
       <li> <a class="footer-contacter-text" > Vous me voulez à vos côtés ? </a> </li>
   <li> <a class="bouton-contacter-footer" href="pages/contacte.html">Contactez-moi !</a></li></ul> 
 </div> 
     <br >
     <a class="logo-footer-bouton" href="index.html">
     <img class="logo-footer" src="img/logo.PNG" style="width:60px;height: 60px" /> </a> <br>
-      <p class="DesignPar"> Designer et coder par Justin Beaulieu.</p> 
+      <p class="design-par"> Designer et coder par Justin Beaulieu.</p> 
     </div>
   <br> </footer>    
+  </body>
+  
 </html>

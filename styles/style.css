@@ -16,16 +16,17 @@ header {
 
 body {
   font-family: "Andada Pro", sans-serif;
+  background-color: var(--white);
 }
 
 * {
   /* outline: 1px solid red;
-    outline-offset: -1px; */
+  outline-offset: -1px; */
   margin: 0;
 }
 
 .logo {
-  margin-left: 5em;
+  padding-left: 5em;
   padding-top: 0.5em;
 }
 
@@ -34,6 +35,7 @@ body {
   justify-content: space-evenly;
   padding-right: 5em;
   list-style-type: none;
+  float: right;
 }
 
 .nav-bar li {
@@ -66,39 +68,45 @@ body {
   font-size: larger;
 }
 
-.nav-bar {
-  float: right;
+.bienvenue-titre {
+  display: flex;
+  justify-content: center;
+  font-size: larger;
 }
 
-.Bienvenueh1 {
+.bienvenue-sous-titre {
   display: flex;
   justify-content: center;
 }
 
-.Bienvenueh2 {
+.bienvenue-photo {
   display: flex;
   justify-content: center;
-  font-weight: lighter;
+  margin-bottom: -4em;
 }
 
-.BienvenuePhoto {
-  display: flex;
-  justify-content: center;
+.photo {
+  border: 15px solid var(--white);
+  border-radius: 25px;
 }
 
-.SectionPresentation {
+#section-presentation {
+  color: var(--white);
   white-space: pre-line;
   background-image: linear-gradient(var(--blue), var(--blue-shade));
   display: grid;
   grid-template-areas: " vide texte vide";
   grid-template-columns: 1fr 3fr 1fr;
+  height: 18em;
+  background-color: var(--white);
+  transition: 0.4s;
 }
 
 .vide {
   grid-area: vide;
 }
 
-.Presentation-part1 {
+.presentation-titre {
   display: flex;
   justify-content: center;
   color: var(--white);
@@ -106,7 +114,7 @@ body {
   margin-top: 3em;
 }
 
-.Presentation-part2 {
+.presentation-sous-titre {
   display: flex;
   justify-content: center;
   text-align: justify;
@@ -115,12 +123,12 @@ body {
   font-weight: lighter;
 }
 
-.section-is-infos {
+.section-infos {
   display: grid;
   grid-template-areas: "vide texte texte vide";
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  column-gap: 2em;
-  text-align: justify;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  background-color: var(--white);
+  height: 15em;
 }
 
 .vide {
@@ -128,37 +136,117 @@ body {
 }
 
 .infos-gauche {
-  display: flex;
-  border: 2px solid var(--black);
+  display: inline;
+  border: 2px solid var(--blue-shade);
   border-radius: 25px;
-  padding: 1em 1em 1em 1em;
+  padding: 2em 4em 0em 4em;
   text-align: justify;
+  margin-top: -5em;
+  background-color: var(--white);
+  margin-right: 1em;
+}
+
+.titre-infos-gauche {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
 }
 
 .infos-droite {
-  display: flex;
-  border: 2px solid var(--black);
+  display: inline;
+  border: 2px solid var(--blue-shade);
   border-radius: 25px;
-  padding: 1em 1em 1em 1em;
+  padding: 2em 4em 0em 4em;
   text-align: justify;
+  margin-top: -5em;
+  background-color: var(--white);
+  margin-left: 1em;
 }
 
-/* width */
+.titre-infos-droit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.section-projet {
+  height: 40em;
+  transition: 0.2s;
+}
+
+.projet-titre {
+  display: flex;
+  justify-content: center;
+}
+
+.projet-sous-titre {
+  display: flex;
+  justify-content: center;
+}
+
+.list-projet {
+  list-style-type: none;
+  display: grid;
+  grid-template-areas: " vide texte photo vide ";
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.list-titre-projet ul {
+  list-style-type: none;
+}
+
+.list-titre-projet li {
+  margin-bottom: 6em;
+  padding-left: 5em;
+  padding-top: 5em;
+}
+
+.list-photo-projet ul {
+  list-style-type: none;
+}
+
+.list-photo-projet li {
+  display: flex;
+  justify-content: center;
+}
+
+.button-tp {
+  transition: transform 0.2s;
+}
+
+.button-tp:hover {
+  transform: scale(1.2);
+}
+
+.button-portfolio-web {
+  transition: transform 0.2s;
+}
+
+.button-portfolio-web img {
+  border: 2px solid var(--white);
+  border-radius: 25px;
+}
+
+.button-portfolio-web:hover {
+  transform: scale(1.2);
+}
+
+.vide {
+  grid-area: vide;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -169,11 +257,27 @@ footer {
   font-family: "Andada Pro", sans-serif;
 }
 
+.footer-contacter {
+  display: grid;
+  grid-template-areas: vide texte vide;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: -3em;
+}
+
+.vide {
+  grid-area: vide;
+}
+
 .footer-contacter ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
   color: var(--white);
+  border: 2px solid var(--blue-shade);
+  border-radius: 25px;
+  padding: 1em 1em 1em 1em;
+  margin-left: 0;
+  background-color: var(--black);
 }
 
 .footer-contacter li {
@@ -199,12 +303,12 @@ footer {
 }
 
 .bouton-contacter-footer:hover {
-  color: var(--blue-shade);
+  color: var(--black);
   background-color: var(--white);
   transform: scale(1.2);
 }
 
-.DesignPar {
+.design-par {
   display: flex;
   justify-content: center;
   font-style: italic;
@@ -216,4 +320,107 @@ footer {
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
+}
+
+.titre-contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+.sous-titre-contact-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.form-contact {
+  display: grid;
+  grid-template-areas: "vide contact vide";
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: center;
+  height: 30em;
+}
+
+.vide {
+  grid-area: vide;
+}
+
+.form-contact-nom {
+  display: inline;
+  float: left;
+  font-size: larger;
+  height: 100px;
+}
+
+.form-contact-email {
+  display: inline;
+  float: right;
+  font-size: larger;
+  height: 100px;
+}
+
+.form-contact-msg {
+  display: inline;
+  float: left;
+  padding-bottom: 2em;
+  font-size: larger;
+}
+
+textarea {
+  resize: none;
+  width: 800px;
+  height: 230px;
+  font-size: large;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-top: 0.5em;
+}
+
+input {
+  width: 370px;
+  height: 30px;
+  font-size: large;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-top: 0.5em;
+}
+
+.container-btn-envoyer {
+  display: flex;
+  justify-content: center;
+  margin-top: 27em;
+}
+
+.btn-envoyer {
+  background-color: var(--white);
+  border: 2px solid var(--blue);
+  border-radius: 25px;
+  color: var(--blue);
+  text-decoration: none;
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: larger;
+  transition: 0.4s;
+}
+
+.btn-envoyer:hover {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.container-blank {
+  height: 5em;
+}
+
+.projet-tp {
+  display: grid;
+  grid-template-areas: " vide texte vide ";
+  grid-template-columns: 1fr 3fr 1fr;
+  text-align: center;
+  height: 40em;
+}
+
+.projet-tp img {
+  margin-bottom: 1em;
+}
+
+.vide {
+  grid-area: vide;
 }
